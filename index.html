@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Beauty Routine Builder & Deal Finder by Skinlab UK. Personalized skincare and makeup routines with exclusive discount codes for Lookfantastic, Sephora UK, Elemis, and Charlotte Tilbury.">
+  <meta name="keywords" content="beauty routine builder, skincare routine, makeup routine, discount codes, Lookfantastic code, Sephora UK code, Elemis discount, Charlotte Tilbury code, UK beauty">
+  <meta name="author" content="Skinlab UK">
+  <title>Skinlab UK — Beauty Routine Builder & Deal Finder</title>
+  <!-- JSON-LD Schema: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Build Your Beauty Routine with Skinlab UK",
+    "description": "A free interactive tool to create personalized skincare and makeup routines with tested discount codes for UK retailers.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "text": "Select your skin type from the options provided."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Choose your main skin concerns (acne, hydration, anti-ageing, etc.)."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Pick a budget range and desired category."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Click 'Build My Routine' to generate personalized product recommendations."
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What discount codes does Skinlab UK offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We currently offer tested discount codes for Lookfantastic (20% off), Sephora UK (15% off), Elemis (15% off), and Charlotte Tilbury (15% off)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Beauty Routine Builder work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Select your skin type, concerns, budget, and category. Our tool then generates a personalized 5–7 step routine with product recommendations and direct links to retailers using our exclusive codes."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD Schema: Offers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "Skinlab UK Beauty Deals",
+    "description": "Verified discount codes for top UK beauty retailers.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "description": "Lookfantastic discount code",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "discount": "20%",
+        "url": "https://www.nicolalondors.com/beauty-picks/save-20-with-look-fantastic-discount-code-lftfnicolal"
+      },
+      {
+        "@type": "Offer",
+        "description": "Sephora UK discount code",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "discount": "15%",
+        "url": "https://www.nicolalondors.com/beauty-picks/save-15-with-sephora-uk-discount-code-nicolasph"
+      },
+      {
+        "@type": "Offer",
+        "description": "Elemis discount code",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "discount": "15%",
+        "url": "https://www.nicolalondors.com/beauty-picks/elemis-discount-code-15-off"
+      },
+      {
+        "@type": "Offer",
+        "description": "Charlotte Tilbury discount code",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "discount": "15%",
+        "url": "https://www.nicolalondors.com/beauty-picks/charlotte-tilbury-discount-code-15-off"
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>html { scroll-behavior: smooth; }</style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-logo">SL</div>
+    <h1>Free Beauty Routine Builder & Deal Finder</h1>
+    <p>Personalized skincare and makeup routines with exclusive discount codes for top UK retailers — powered by Skinlab UK</p>
+    <a href="#builder" class="hero-cta">Build Your Routine</a>
+    <!-- Optional: add your Skinlab UK banner image here -->
+    <!-- <img src="assets/banner.png" alt="Skinlab UK Beauty Tools" style="max-width:720px;margin:24px auto 0;border-radius:12px;box-shadow:var(--shadow);"> -->
+  </section>
+
+  <!-- ROUTINE BUILDER SECTION -->
+  <section id="builder" class="section">
+    <h2 class="section-title">Build Your Personalized Routine</h2>
+    <p class="section-sub">Answer a few questions and get a custom 5–7 step skincare or makeup routine tailored to you</p>
+
+    <div class="builder-card">
+      <div class="builder-grid">
+        <div class="builder-inputs">
+          <div class="field-group">
+            <label class="field-label">What is your skin type?</label>
+            <select id="skinType">
+              <option value="">Select skin type...</option>
+              <option value="dry">Dry</option>
+              <option value="oily">Oily</option>
+              <option value="combination">Combination</option>
+              <option value="sensitive">Sensitive</option>
+              <option value="normal">Normal</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">What are your main concerns? (select all that apply)</label>
+            <div class="tag-select" id="concerns"></div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">What's your budget?</label>
+            <div class="budget-options">
+              <div class="budget-btn" data-budget="budget">Budget</div>
+              <div class="budget-btn" data-budget="mid">Mid-Range</div>
+              <div class="budget-btn" data-budget="luxury">Luxury</div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Which category?</label>
+            <div class="category-toggle">
+              <div class="category-btn" data-category="skincare">Skincare</div>
+              <div class="category-btn" data-category="makeup">Makeup</div>
+              <div class="category-btn" data-category="both">Both</div>
+            </div>
+          </div>
+
+          <button id="buildBtn" class="build-btn">Build My Routine</button>
+          <button id="resetBtn" class="reset-btn" style="display:none;">Start Over</button>
+        </div>
+
+        <div class="builder-output">
+          <p style="color:var(--warm-gray); font-size:0.9rem; margin-bottom:12px;">
+            <strong>What to expect:</strong><br>
+            • 5–7 personalized product recommendations<br>
+            • Tailored to your skin type and concerns<br>
+            • Includes direct links to retailers<br>
+            • Uses our tested discount codes
+          </p>
+        </div>
+      </div>
+
+      <div id="results">
+        <div class="result-header">
+          <h3>Your Personalized Routine</h3>
+          <p>Based on your skin type and concerns, we recommend the following steps:</p>
+        </div>
+        <div class="disclosure" style="margin-bottom: 24px; max-width: 100%;">
+          <strong>Affiliate Disclosure:</strong> This page contains affiliate links. Skinlab UK may earn a commission on qualifying purchases at no extra cost to you. All recommendations are based on real product testing and research.
+        </div>
+        <ul class="routine-steps"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS SECTION -->
+  <section class="section" style="background: var(--light-pink);">
+    <h2 class="section-title">Current Best Deals</h2>
+    <p class="section-sub">Use these exclusive discount codes at checkout to save on your favourite brands</p>
+
+    <div class="disclosure" style="margin-bottom: 28px;">
+      <strong>Affiliate Disclosure:</strong> This page contains affiliate links. Skinlab UK may earn a commission on qualifying purchases at no extra cost to you. All recommendations are based on real product testing and research.
+    </div>
+      <!-- Lookfantastic -->
+      <div class="deal-card">
+        <div class="deal-logo">LF</div>
+        <h3>Lookfantastic</h3>
+        <div class="discount">20% OFF</div>
+        <div class="code">LFTFNICOLAL</div>
+        <a href="https://www.nicolalondors.com/beauty-picks/save-20-with-look-fantastic-discount-code-lftfnicolal" target="_blank" rel="noopener" class="deal-link">Shop with our Lookfantastic discount code →</a>
+      </div>
+
+      <!-- Sephora UK -->
+      <div class="deal-card">
+        <div class="deal-logo">SE</div>
+        <h3>Sephora UK</h3>
+        <div class="discount">15% OFF</div>
+        <div class="code">NICOLASPH</div>
+        <a href="https://www.nicolalondors.com/beauty-picks/save-15-with-sephora-uk-discount-code-nicolasph" target="_blank" rel="noopener" class="deal-link">Get 15% off Sephora UK with our code →</a>
+      </div>
+
+      <!-- Elemis -->
+      <div class="deal-card">
+        <div class="deal-logo">EL</div>
+        <h3>Elemis</h3>
+        <div class="discount">15% OFF</div>
+        <div class="code">NICOLAELEMIS</div>
+        <a href="https://www.nicolalondors.com/beauty-picks/elemis-discount-code-15-off" target="_blank" rel="noopener" class="deal-link">Full details and current code →</a>
+      </div>
+
+      <!-- Charlotte Tilbury -->
+      <div class="deal-card">
+        <div class="deal-logo">CT</div>
+        <h3>Charlotte Tilbury</h3>
+        <div class="discount">15% OFF</div>
+        <div class="code">NICOLECT</div>
+        <a href="https://www.nicolalondors.com/beauty-picks/charlotte-tilbury-discount-code-15-off" target="_blank" rel="noopener" class="deal-link">Full details and current code →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SECTION -->
+  <section class="section">
+    <h2 class="section-title">Why Trust Our Deals?</h2>
+    <p class="section-sub">Skinlab UK is dedicated to practical skincare guidance and carefully selected retailer partnerships</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">✓</div>
+        <h3>Tested Codes</h3>
+        <p>Every discount code is verified before we share it. We test them to ensure they work at checkout.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💎</div>
+        <h3>Quality Retailers</h3>
+        <p>We only partner with trusted UK beauty retailers that stock authentic, high-quality products.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🧴</div>
+        <h3>Skincare Expertise</h3>
+        <p>Our recommendations are based on real skincare knowledge, not just affiliate commissions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" style="background: var(--light-pink);">
+    <div class="about-card">
+      <div class="about-logo">SL</div>
+      <h3>About Skinlab UK</h3>
+      <p>Skinlab UK creates practical skincare tools and resources to help you achieve healthier, glowing skin. From personalized routine builders to curated deals, we make it easier to look after your skin without overspending. Our mission is to provide genuine value through expert guidance, tested product recommendations, and exclusive savings from top beauty retailers.</p>
+    </div>
+  </section>
+
+  <!-- DISCLOSURE BOX -->
+  <section class="section">
+    <div class="disclosure">
+      <strong>Affiliate Disclosure:</strong> This page contains affiliate links. Skinlab UK may earn a commission on qualifying purchases at no extra cost to you. All recommendations are based on real product testing and research.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Skinlab UK — Beauty Routine Builder & Deal Finder</p>
+    <p>This site is a free tool provided by Skinlab UK. For questions or collaborations, please reach out through our retailer partner pages.</p>
+    <p>© 2026 Skinlab UK. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
