@@ -33,14 +33,14 @@ Skinlab UK's Beauty Routine Builder is a free tool that helps you build a person
 
 ## Shop with Our Recommended Codes
 
-Save on your next purchase with these exclusive codes. Each link below includes our verified discount:
+Save on your next purchase with these exclusive links to verified discount pages:
 
-| Retailer | Discount | Code | Link |
-|----------|----------|------|------|
-| Lookfantastic | 20% off | LFTFNICOLAL | [Use our code](https://www.nicolalondors.com/beauty-picks/save-20-with-look-fantastic-discount-code-lftfnicolal) |
-| Sephora UK | 15% off | NICOLASPH | [Use our code](https://www.nicolalondors.com/beauty-picks/save-15-with-sephora-uk-discount-code-nicolasph) |
-| Elemis | 15% off | NICOLAELEMIS | [Use our code](https://www.nicolalondors.com/beauty-picks/elemis-discount-code-15-off) |
-| Charlotte Tilbury | 15% off | NICOLECT | [Use our code](https://www.nicolalondors.com/beauty-picks/charlotte-tilbury-discount-code-15-off) |
+| Retailer | Discount | Link |
+|----------|----------|------|
+| Lookfantastic | 20% off | [View offer](https://www.nicolalondors.com/beauty-picks/save-20-with-look-fantastic-discount-code-lftfnicolal) |
+| Sephora UK | 15% off | [View offer](https://www.nicolalondors.com/beauty-picks/save-15-with-sephora-uk-discount-code-nicolasph) |
+| Elemis | 15% off | [View offer](https://www.nicolalondors.com/beauty-picks/elemis-discount-code-15-off) |
+| Charlotte Tilbury | 15% off | [View offer](https://www.nicolalondors.com/beauty-picks/charlotte-tilbury-discount-code-15-off) |
 
 ---
 

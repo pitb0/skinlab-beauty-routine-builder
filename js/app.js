@@ -362,7 +362,6 @@ function renderResults(routine) {
       <a href="${getRetailerLink(retailer)}" class="routine-cta" target="_blank" rel="noopener">
         Shop with our ${getRetailerName(retailer)} discount code
       </a>
-      <div class="step-disclosure" style="font-size:0.75rem;color:var(--warm-gray);margin-top:6px;">This page contains affiliate links. Skinlab UK may earn a commission at no extra cost to you. All recommendations are based on real product testing and research.</div>
     `;
 
     stepsList.appendChild(li);
