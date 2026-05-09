@@ -309,16 +309,6 @@ function getRetailerName(retailer) {
   return names[retailer] || retailer;
 }
 
-function getRetailerCode(retailer) {
-  const codes = {
-    lookfantastic: 'LFTFNICOLAL',
-    sephora: 'NICOLASPH',
-    elemis: 'NICOLAELEMIS',
-    tilbury: 'NICOLECT'
-  };
-  return codes[retailer] || '';
-}
-
 function getRelevantRetailers(category) {
   // Return list of retailer keys that sell this category
   if (category === 'Skincare') {
